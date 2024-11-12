@@ -249,8 +249,6 @@ To get started with building apps for Android and iOS using Flutter, follow thes
 - [Dart Programming Language](https://dart.dev): Information and tutorials on Dart, the language used by Flutter.
 - [Cross-Platform Mobile Development with Flutter](https://flutter.dev/showcase): Showcases the capabilities of Flutter for cross-platform development with real-world examples.
 
-These references provide a solid foundation for understanding how Flutter and Dart code are compiled for different platforms and for learning more about cross-platform development best practices.
-
 ### Summary
 Flutter provides a unified framework to develop cross-platform applications by compiling Dart code into native Android and iOS applications. The use of both AOT and JIT compilation ensures that the final apps have native performance, while the development process remains fast and efficient. By writing code once and compiling it for multiple platforms, Flutter offers a streamlined solution to cross-platform app development, which significantly reduces the effort and time required to launch apps for both Android and iOS.
 
@@ -396,9 +394,8 @@ This diagram shows that the function is defined once but executed only when need
 ## References and Useful Resources
 - [Flutter Documentation on Functions](https://flutter.dev/docs/development): Official documentation that explains how to use functions in Flutter.
 - [Dart Language Tour](https://dart.dev/guides/language/language-tour#functions): Provides a comprehensive guide on functions in Dart.
-- [Functional Programming in Dart](https://dart.dev/guides/libraries/functional-programming): Details on how to use functional programming techniques in Dart, including anonymous functions and higher-order functions.
+- [Functional Programming in Dart](https://levelup.gitconnected.com/functional-programming-in-dart-foundation-part-0-7e932517b824): Details on how to use functional programming techniques in Dart, including anonymous functions and higher-order functions.
 
-These resources offer in-depth insights into function usage, making it easier to grasp different concepts, from function definitions to advanced functional programming.
 
 ### Summary
 In Flutter, functions play a pivotal role in creating dynamic and responsive applications. The Code on Demand concept helps in efficient resource utilization by executing code only when required. Dart provides multiple types of functions, including named, anonymous, and higher-order functions, allowing for modular, reusable, and expressive code. Understanding how to define and use these functions effectively contributes to building maintainable and performant Flutter applications.
@@ -633,8 +630,6 @@ In this example, a stateful widget `InteractiveWidget` is used to manage the tex
 - [Dart and Flutter Widget Tree Explained](https://dart.dev/guides/language/language-tour#functions): Guides that offer an in-depth understanding of Flutter widgets and how the widget tree works.
 - [Flutter Layouts and Trees](https://flutter.dev/docs/development/ui/layout): Useful for understanding how different widgets can be combined to create complex layouts.
 
-These resources will help you explore further into building effective UIs with Flutter using its comprehensive widget system.
-
 ### Summary
 Widgets are the backbone of any Flutter application, providing a consistent and declarative way to create UI components. The Widget Tree in Flutter represents the hierarchical structure of how widgets are organized and interact with each other to create a coherent and functional UI. Understanding widgets and their relationships within the widget tree is crucial for building effective and dynamic Flutter applications.
 
@@ -765,10 +760,7 @@ In the diagram above, you can see how positional arguments depend on the order, 
 
 ## References and Useful Resources
 - [Flutter and Dart Function Documentation](https://dart.dev/guides/language/language-tour#functions): Detailed documentation on defining functions, including both positional and named arguments.
-- [Flutter Official Documentation](https://flutter.dev/docs): Provides examples of how Flutter widgets utilize positional and named arguments to configure UI components.
-- [Dart Language Tour](https://dart.dev/guides/language/language-tour): Offers a comprehensive overview of Dart language features, including argument handling.
 
-These resources provide deeper insights into understanding how arguments can be effectively used in Flutter to write cleaner and more readable code.
 
 ### Summary
 In Flutter, understanding the difference between **positional** and **named arguments** can help developers write more flexible and readable code. **Positional arguments** are useful when a function requires a fixed number of parameters, whereas **named arguments** enhance readability, especially when there are multiple optional parameters or when clarity is needed. In Flutter widgets, named arguments are extensively used to provide easy customization and configuration, improving the clarity and maintainability of the codebase.
@@ -923,17 +915,8 @@ In this diagram, `const` ensures that the widgets are reused whenever the widget
 - [Dart Language Tour](https://dart.dev/guides/language/language-tour#constants): Detailed guide on Dart's usage of constants (`const`) and when they are most effective.
 - [Effective Dart](https://dart.dev/guides/language/effective-dart/usage): Guidance on when and how to use constants for effective Dart programming.
 
-These resources offer comprehensive insights into using `const` to improve code quality, reduce memory footprint, and enhance performance in Flutter apps.
-
 ### Summary
 In Flutter, the `const` keyword is an essential tool for defining compile-time constants that contribute to better performance, especially when building large and complex widget trees. It helps minimize unnecessary rebuilds, reduces memory consumption, and enhances the readability of the codebase. Leveraging `const` for widgets that do not change ensures that Flutter's rendering process is as efficient as possible, ultimately providing a smoother user experience.
 
 ---
-
-**Q1:** How does using `const` improve the rendering efficiency of a Flutter application?
-
-**Q2:** What are the primary differences between `const` and `final`, and when should each be used in Flutter?
-
-**Q3:** Can you provide an example of when using `const` might not be suitable in a Flutter widget, and why?
-
 
