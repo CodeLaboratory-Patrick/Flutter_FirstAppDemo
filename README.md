@@ -929,11 +929,3 @@ These resources offer comprehensive insights into using `const` to improve code 
 In Flutter, the `const` keyword is an essential tool for defining compile-time constants that contribute to better performance, especially when building large and complex widget trees. It helps minimize unnecessary rebuilds, reduces memory consumption, and enhances the readability of the codebase. Leveraging `const` for widgets that do not change ensures that Flutter's rendering process is as efficient as possible, ultimately providing a smoother user experience.
 
 ---
-
-**Q1:** How does using `const` improve the rendering efficiency of a Flutter application?
-
-**Q2:** What are the primary differences between `const` and `final`, and when should each be used in Flutter?
-
-**Q3:** Can you provide an example of when using `const` might not be suitable in a Flutter widget, and why?
-
-
