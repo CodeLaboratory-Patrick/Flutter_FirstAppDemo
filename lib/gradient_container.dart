@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/styled_text.dart';
 
+var startAlignment = Alignment.topLeft;
+var endAlignment = Alignment.bottomRight;
+
 class GradientContainer extends StatelessWidget{
   //initialization work
   //GradientContainer({key}): super(key: key);
@@ -9,14 +12,14 @@ class GradientContainer extends StatelessWidget{
   @override
   Widget build(context) {
     return  Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                 Color.fromRGBO(3, 169, 244, 1),
-                 Color.fromARGB(255, 23, 99, 161)
+              colors: const [
+                 Color.fromARGB(255, 3, 169, 244),
+                 Color.fromARGB(255, 23, 99, 161),
               ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
+              begin: startAlignment,
+              end: endAlignment,
             ),
           ),
           child: const Center(
