@@ -4,27 +4,49 @@ import 'package:first_app/styled_text.dart';
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
-class GradientContainer extends StatelessWidget{
+class GradientContainer extends StatelessWidget {
   //initialization work
   //GradientContainer({key}): super(key: key);
-  const GradientContainer({super.key});
-  
+
+  // Option 1
+  //const GradientContainer({required this.colors, super.key});
+  //final List<Color> colors;
+
+  //      @override
+  //Widget build(context) {
+  //  return  Container(
+  //        decoration: BoxDecoration(
+  //          gradient: LinearGradient(
+  //            colors: colors,
+  //            begin: startAlignment,
+  //            end: endAlignment,
+  //          ),
+  //        ),
+  //        child: const Center(
+  //          child: StyledText('Hello World'),
+  //        ),
+  //      );
+  //}
+
+
+  //Option 2
+  const GradientContainer(this.color1, this.color2, {super.key});
+  final Color color1;
+  final Color color2;
+
   @override
   Widget build(context) {
-    return  Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                 Color.fromARGB(255, 3, 169, 244),
-                 Color.fromARGB(255, 23, 99, 161),
-              ],
-              begin: startAlignment,
-              end: endAlignment,
-            ),
-          ),
-          child: const Center(
-            child: StyledText('Hello World'),
-          ),
-        );
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [color1, color2],
+          begin: startAlignment,
+          end: endAlignment,
+        ),
+      ),
+      child: const Center(
+        child: StyledText('Hello World'),
+      ),
+    );
   }
 }
