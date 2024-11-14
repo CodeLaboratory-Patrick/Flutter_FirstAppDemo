@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dice_roller.dart';
+import 'package:first_app/dice_roller.dart';
+
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
@@ -33,8 +34,8 @@ class GradientContainer extends StatelessWidget {
 
   //Option 3
   const GradientContainer.purple({super.key}) 
-      : color1 = const Color.fromARGB(255, 3, 169, 244),
-        color2 = const Color.fromARGB(255, 23, 99, 161);  
+      : color1 = const Color(0xFF03A9F4),
+        color2 = const Color(0xFF1763A1);  
 
   final Color color1;
   final Color color2;

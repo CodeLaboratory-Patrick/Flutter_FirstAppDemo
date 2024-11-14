@@ -55,13 +55,14 @@ class _DiceRollerState extends State<DiceRoller>
   
   //Option 2
   
-   var currentDiceRoll = 2;
+  var currentDiceRoll = 2;
   void rollDice()
   {
     setState(() {
       currentDiceRoll = randomizer.nextInt(6) + 1;
     });
   }
+  
   @override
   Widget build(context) {
     return Column(
