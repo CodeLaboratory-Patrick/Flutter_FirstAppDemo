@@ -2305,7 +2305,7 @@ Constructor Constructor Constructor Constructor
 ### Summary
 Constructors in Flutter are fundamental for initializing objects and customizing widgets. They provide various features such as **default**, **named**, **constant**, and **factory constructors**, each serving unique purposes. Understanding and using these constructors appropriately leads to cleaner, more organized, and reusable code, making it a vital part of Flutter development.
 
-## 🎯🎯 Understanding `super.key` in Flutter
+## 🎯 Understanding `super.key` in Flutter
 
 ## What is `super.key` in Flutter?
 In Flutter, the term **`super.key`** is used within a constructor to pass the `key` parameter to the superclass of the widget. When you create a custom widget that extends a base widget, such as `StatelessWidget` or `StatefulWidget`, it often inherits from a parent class that may need the `key`. The `key` is an important part of widget identity in the widget tree, and passing it correctly allows Flutter to efficiently handle updates and maintain the structure of the UI.
